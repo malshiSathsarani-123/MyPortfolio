@@ -109,3 +109,41 @@ main>p{
     left: 280px;
     font-size: 25px;
 }
+footer{
+    position: relative;
+    height: 200px;
+    background-color: #084d4d;
+}
+footer>u{
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    font-size: 20px;
+}
+footer>p:nth-child(2){
+    position: absolute;
+    left: 100px;
+    top: 75px;
+    font-size: 20px;
+}
+footer>p:nth-child(3){
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    font-size: 20px;
+}
+footer>h5:nth-child(4){
+    position: absolute;
+    margin-top: 0;
+    right: 150px;
+    top: 75px;
+    font-size: 20px;
+}
+footer>div{
+    position: absolute;
+    right: 120px;
+    top: 110px;
+}
