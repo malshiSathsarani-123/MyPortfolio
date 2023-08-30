@@ -45,6 +45,7 @@ header>nav>a{
     height: 350px;
     /*border: #018A8A solid 2px;*/
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .hexagon {
