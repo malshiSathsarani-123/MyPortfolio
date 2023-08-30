@@ -1,0 +1,113 @@
+header>nav{
+    /*background-color: #D9D9D9;*/
+    /*background-color: #021426;*/
+}
+main{
+    /*background-color: #D9D9D9;*/
+    /*background-color: #021426;*/
+    position: relative;
+    top: 50px;
+}
+main>h1{
+    font-size: 40px;
+    top: 75px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: fit-content;
+}
+header>nav>a{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.nav{
+    position: relative;
+}
+
+.nav>span{
+    /*color: white;*/
+    font-weight: bold;
+    color:  #021426;
+    position: absolute;
+    left: 100px;
+    /*top: 50px;*/
+    font-size: 30px;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+}
+.skills{
+    position: relative;
+    left: 50px;
+    top: 75px;
+    width: calc(100vw - 100px);
+    height: 350px;
+    border: #018A8A solid 2px;
+    display: flex;
+    justify-content: space-around;
+}
+.hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 140px;
+    height: 120px;
+    background: #04c2c9;
+    position: relative;
+}
+.rectangle{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+    margin: auto;
+    width: fit-content;
+}
+.text{
+    position: absolute;
+    top: 180px;
+    font-size: 25px;
+}
+.cart{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /*border: #018A8A solid 1px;*/
+}
+.hexagon>img{
+    transform: rotate(315deg);
+    width: 60px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+.label{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 130px;
+    margin: auto;
+    width: fit-content;
+    font-size: 30px;
+    font-weight: bold;
+}
+.div{
+    height: 500px;
+    width: 1000px;
+    top: 500px;
+    position: relative;
+    border: solid 2px red;
+}
+.img{
+    position: absolute;
+    left: 150px;
+    top: 500px;
+}
+.skills1{
+    position: absolute;
+    top: 475px;
+    left: 500px;
+}
+
