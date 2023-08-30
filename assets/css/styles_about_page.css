@@ -93,21 +93,85 @@ header>nav>a{
     font-size: 30px;
     font-weight: bold;
 }
-.div{
-    height: 500px;
-    width: 1000px;
-    top: 500px;
-    position: relative;
-    border: solid 2px red;
-}
 .img{
     position: absolute;
     left: 150px;
     top: 500px;
 }
 .skills1{
+    margin: 50px auto 0 auto;
+    max-width: 50%;
+    width: calc(100% - 15px);
     position: absolute;
     top: 475px;
     left: 500px;
 }
-
+.bar{
+    position: relative;
+    background: #D9D9D9;
+    /*width: 500px;*/
+    height: 28px;
+    margin-top: 15px;
+    flex-direction: column;
+}
+.bar_fill{
+    width: 90%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #00a1a7;
+    opacity: 1;
+    padding: 0;
+    font-size: 11pt;
+    height: 28px;
+    margin: 0 0 15px 0;
+    display: block;
+}
+.tag{
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: #04c2c9;
+    color: #fff;
+    height: 100%;
+    width: 110px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bar>span{
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    color: #666;
+    font-size: 20px;
+    display: initial;
+    position: absolute;
+    right: 0;
+    height: 28px;
+    margin: 0 0 15px 0;
+}
+.skills1>div:first-child>div{
+    width: 70%;
+}
+.skills1>div:nth-child(2)>div{
+    width: 90%;
+}
+.skills1>div:nth-child(3)>div{
+    width: 80%;
+}
+.skills1>div:nth-child(4)>div{
+    width: 80%;
+}
+.skills1>div:nth-child(5)>div{
+    width: 50%;
+}
+.skills1>div:nth-child(6)>div{
+    width: 90%;
+}
+.skills1>div:nth-child(7)>div{
+    width: 70%;
+}
+.skills1>div:nth-child(8)>div{
+    width: 60%;
+}
