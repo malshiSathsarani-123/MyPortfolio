@@ -28,7 +28,7 @@ header>nav>a{
 }
 
 section:first-child{
-    background-color: #D9D9D9;
+    background-color: white;
     /*border: black solid 2px;*/
     /*background-color: #021426;*/
     position: relative;
@@ -78,12 +78,16 @@ main>section>img{
 main>section>a>button{
     width: 150px;
     height: 35px;
-    background-color: #018A8A;
+
     border-radius: 50%;
     /*color: white;*/
     position: absolute;
     top: 300px;
     left: 75px;
+}
+main>section>a>button:hover{
+    background-color: #018A8A;
+    cursor: pointer;
 }
 #bi0{
     background-color: #D9D9D9;

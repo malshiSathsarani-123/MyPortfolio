@@ -126,6 +126,7 @@ main>h1{
     top: 200px;
     margin: auto;
     width: fit-content;
+    text-align: center;
     font-size: 20px;
 }
 .button{
@@ -144,6 +145,14 @@ main>h1{
 }
 .button>button:hover{
     background-color: #ff253a;
+    cursor: pointer;
+}
+
+
+.img:hover {
+    transform: scale(1.1);
+    filter: grayscale(1);
+
 }
 
 footer{
