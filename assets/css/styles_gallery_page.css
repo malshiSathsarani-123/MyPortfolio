@@ -1,3 +1,6 @@
+::selection{
+    background-color: #018A8A;
+}
 header>nav>a{
     position: absolute;
     right: 20px;

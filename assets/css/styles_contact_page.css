@@ -1,3 +1,6 @@
+::selection{
+    background-color: #018A8A;
+}
 main{
     position: relative;
     top: 50px;
@@ -20,12 +23,10 @@ header>nav>a{
 }
 
 .nav>span{
-    /*color: white;*/
     font-weight: bold;
     color:  #021426;
     position: absolute;
     left: 100px;
-    /*top: 50px;*/
     font-size: 30px;
     margin: 0;
     width: fit-content;
