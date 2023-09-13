@@ -64,7 +64,7 @@ footer{
     top: 1400px;
     position: relative;
     height: 200px;
-    background-color: #084d4d;
+    background-color: teal;
 }
 footer>u{
     width: fit-content;

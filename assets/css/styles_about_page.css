@@ -213,7 +213,7 @@ footer{
     top: 550px;
     position: relative;
     height: 200px;
-    background-color: #084d4d;
+    background-color: teal;
 }
 footer>u{
     width: fit-content;

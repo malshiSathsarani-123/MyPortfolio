@@ -27,6 +27,7 @@ header>nav>a{
 }
 main{
     position: relative;
+    /*border: #018A8A 2px solid;*/
     top: 50px;
 }
 
@@ -46,6 +47,7 @@ main>h1{
     top: 50px;
     width: calc(100vw - 100px);
     height: 350px;
+    /*border: #018A8A solid 2px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -54,14 +56,15 @@ main>h1{
 .cart{
     position: relative;
     width: 300px;
-    height: 300px;
+    height: 200px;
     top: 50px;
     border: #018A8A solid 1px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 100px;
 }
-.project_img {
+.project_img{
+    z-index: 3;
     width: 140px;
     height: 120px;
     position: relative;
@@ -70,15 +73,16 @@ main>h1{
     position: absolute;
     left: 0;
     right: 0;
-    top: 200px;
+    top: 50px;
     margin: auto;
     width: fit-content;
-    text-align: center;
+    font-weight: bold;
     font-size: 20px;
+    text-align: center;
 }
 .button{
     position: absolute;
-    top: 250px;
+    /*top: 270px;*/
     left: 0;
     right: 0;
     margin: auto;
@@ -86,27 +90,32 @@ main>h1{
     width: fit-content;
 }
 .button>button{
-    background-color: #018A8A;
+    background-color: teal;
     border-radius: 10%;
     color: white;
 }
-
 .button>button:hover{
-    background-color: #ff253a;
+    background-color: #555;
+    color: white;
     cursor: pointer;
 }
-.img:hover {
-    transform: scale(1.1);
-    filter: grayscale(1);
-
+.cart:hover .project_img  img {
+    clip-path: circle(0.0% at 50% 50%);
 }
+/*.content {*/
+/*    position:relative;*/
+/*    z-index:0;*/
+/*    display:flex;*/
+/*    align-items:center;*/
+/*    height:100%;*/
+/*}*/
 footer{
-    top: 900px;
+    top: 770px;
     bottom: 0;
     position: absolute;
     width: 100%;
     height: 200px;
-    background-color: #084d4d;
+    background-color: teal;
 }
 footer>u{
     width: fit-content;
