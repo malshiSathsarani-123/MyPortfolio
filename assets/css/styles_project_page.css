@@ -89,12 +89,12 @@ main>h1{
     font-size: 25px;
     width: fit-content;
 }
-.button>button{
+.button button{
     background-color: teal;
     border-radius: 10%;
     color: white;
 }
-.button>button:hover{
+.button button:hover{
     background-color: #555;
     color: white;
     cursor: pointer;
