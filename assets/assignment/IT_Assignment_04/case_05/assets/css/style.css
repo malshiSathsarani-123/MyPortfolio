@@ -1,0 +1,68 @@
+:root{
+    --slide-width : 50vw;
+    --slide-height : 50vh;
+}
+section{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    animation-name: my-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+main{
+    width:var(--slide-width);
+    height: var(--slide-height);
+    border: 5px solid red;
+    overflow:hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+
+}
+div{
+    width: var(--slide-width);
+    height: var(--slide-height);
+}
+div:first-child{
+    background: url("../animation_slide/slide1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+div:nth-child(2){
+    background: url("../animation_slide/slide2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+div:nth-child(3){
+    background: url("../animation_slide/slide3.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+div:last-child{
+    background: url("../animation_slide/slide4.jpeg");
+    background-size: cover;
+    background-position:center;
+}
+
+@keyframes my-animation {
+    0%,20%{
+        transform: translateX(0%);
+    }
+    25%,45%{
+        transform: translateX(-25%);
+    }
+    50%,70%{
+        transform: translateX(-50%);
+    }
+    75%{
+        transform: translateX(-75%);
+    }
+}

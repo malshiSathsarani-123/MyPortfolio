@@ -1,0 +1,46 @@
+div{
+    background: gray;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+div>h3{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    color: white;
+}
+
+body{
+    background: darkblue;
+}
+
+div::before{
+    content: "";
+    border: 10px solid white;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    border-top-color: red;
+}
+
+div:hover::before{
+    transform: rotate(360deg);
+    transition-duration: 3s;
+}
