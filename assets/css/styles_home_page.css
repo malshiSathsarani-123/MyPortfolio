@@ -88,7 +88,13 @@ main>section{
     margin: 0;
     width: fit-content;
     height: fit-content;
+    font-family:Brush Script MT, Brush Script Std, cursive;
 }
+
+.nav:hover{
+    cursor: pointer;
+}
+
 .menu{
     color: white;
     font-weight: bold;
@@ -194,7 +200,6 @@ main>img{
     border-radius: 100%;
 }
 main>p{
-    /*color: white;*/
     position: absolute;
     top: 100px;
     left: 280px;
@@ -202,8 +207,8 @@ main>p{
 }
 footer{
     position: relative;
-    height: 200px;
-    background-color: teal;
+    height: 150px;
+    background-color: #00a1a7;
 }
 footer>u{
     width: fit-content;
@@ -237,4 +242,69 @@ footer>div{
     position: absolute;
     right: 120px;
     top: 110px;
+}
+@media all and (max-width: 425px) {
+    nav>a>img {
+        position: absolute;
+        width: 20px;
+    }
+    .nav>span {
+        left: 20px;
+        font-size: 20px;
+    }
+    .menu{
+        right: 50px;
+    }
+    .hero-image {
+        height: 50%;
+    }
+    .name1{
+        font-size:25px
+    }
+    .hero-text button {
+        padding: 5px 20px;
+    }
+    #bi0{
+        height: 600px;
+    }
+    main>b{
+        font-size: 30px;
+    }
+    main>img{
+        top: 75px;
+        left: 130px;
+    }
+    main>p{
+        top: 330px;
+        left: 25px;
+        font-size: 15px;
+    }
+    footer{
+        height: 110px;
+    }
+    footer>u{
+        font-size: 12px;
+    }
+    footer>p:nth-child(2){
+        left: 10px;
+        top: 50px;
+        font-size: 15px;
+    }
+    footer>p:nth-child(3){
+        left: 10px;
+        top: 65px;
+        font-size: 15px;
+    }
+    footer>h5:nth-child(4){
+        right: 30px;
+        top: 60px;
+        font-size: 13px;
+    }
+    footer>div{
+        right: 20px;
+        top: 80px;
+    }
+    footer>div img{
+        width: 20px;
+    }
 }

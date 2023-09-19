@@ -18,9 +18,13 @@ header>nav>a{
     position: absolute;
     right: 20px;
     top: 10px;
+    font-family:Brush Script MT, Brush Script Std, cursive;
 }
 .nav{
     position: relative;
+}
+.nav:hover{
+    cursor: pointer;
 }
 
 .nav>span{
@@ -212,8 +216,8 @@ header>nav>a{
 footer{
     top: 550px;
     position: relative;
-    height: 200px;
-    background-color: teal;
+    height: 150px;
+    background-color: #00a1a7;
 }
 footer>u{
     width: fit-content;
@@ -247,4 +251,94 @@ footer>div{
     position: absolute;
     right: 120px;
     top: 110px;
+}
+
+@media all and (max-width: 425px) {
+    nav>a>img {
+        position: relative;
+        width: 20px;
+        top: 10px;
+    }
+    .nav>span {
+        left: 30px;
+        font-size: 20px;
+    }
+    main{
+        /*position: relative;*/
+        top: 40px;
+    }
+    main>h1{
+        font-size: 25px;
+    }
+    .skills{
+        position: relative;
+        left: 50px;
+        top: 20px;
+    }
+    .hexagon {
+        width: 120px;
+        height: 100px;
+    }
+
+    .text{
+        position: absolute;
+        top: 160px;
+        font-size: 20px;
+    }
+    .cart{
+        position: relative;
+        width: 200px;
+        height: 300px;
+    }
+
+    .label{
+        top: 120px;
+        font-size: 25px;
+    }
+    .img{
+        position: absolute;
+        left: 50px;
+        top: 1150px;
+    }
+    .skills1{
+        max-width: 80%;
+        top: 1400px;
+        left: 50px;
+    }
+
+    .tag{
+        width: 80px;
+    }
+    .education{
+        display: none;
+    }
+    footer{
+        top: 1000px;
+        height: 110px;
+    }
+    footer>u{
+        font-size: 12px;
+    }
+    footer>p:nth-child(2){
+        left: 10px;
+        top: 50px;
+        font-size: 15px;
+    }
+    footer>p:nth-child(3){
+        left: 10px;
+        top: 65px;
+        font-size: 15px;
+    }
+    footer>h5:nth-child(4){
+        right: 30px;
+        top: 60px;
+        font-size: 13px;
+    }
+    footer>div{
+        right: 20px;
+        top: 80px;
+    }
+    footer>div img{
+        width: 20px;
+    }
 }
