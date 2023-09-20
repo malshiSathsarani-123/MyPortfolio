@@ -10,6 +10,7 @@ body, html {
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/profile3.jpg");
     height: 100%;
+    width: calc(100vw - 20px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,7 +84,7 @@ main>section{
     color: white;
     font-weight: bold;
     position: absolute;
-    left: 100px;
+    left: 50px;
     font-size: 30px;
     margin: 0;
     width: fit-content;
@@ -99,7 +100,7 @@ main>section{
     color: white;
     font-weight: bold;
     position: absolute;
-    right: 100px;
+    right: 50px;
     top: 20px;
     font-size: 10px;
     margin: 0;
@@ -195,7 +196,7 @@ main>b{
 }
 main>img{
     position: absolute;
-    top: 100px;
+    top: 126px;
     left: 50px;
     border-radius: 100%;
 }
@@ -207,6 +208,7 @@ main>p{
 }
 footer{
     position: relative;
+    width: calc(100vw - 20px);
     height: 150px;
     background-color: #00a1a7;
 }
@@ -221,27 +223,107 @@ footer>u{
 }
 footer>p:nth-child(2){
     position: absolute;
-    left: 100px;
+    left: 60px;
     top: 75px;
     font-size: 20px;
 }
 footer>p:nth-child(3){
     position: absolute;
-    left: 100px;
+    left: 60px;
     top: 100px;
     font-size: 20px;
 }
 footer>h5:nth-child(4){
     position: absolute;
     margin-top: 0;
-    right: 150px;
+    right: 70px;
     top: 75px;
     font-size: 20px;
 }
 footer>div{
     position: absolute;
-    right: 120px;
+    right: 40px;
     top: 110px;
+}
+
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+    .menu{
+        right: 50px;
+    }
+    .nav>span {
+        left: 50px;
+    }
+
+    #bi0{
+        height: 400px;
+    }
+    main>img{
+        top: 125px;
+    }
+    main>p{
+        top: 100px;
+        font-size: 25px;
+    }
+}
+@media all and (max-width: 768px) {
+    .hero-image {
+        height: 75%;
+    }
+    .hero-text {
+        top: 60%;
+    }
+    .name1{
+        font-size:35px
+    }
+    .hero-text button {
+        padding: 10px 20px;
+    }
+    .hero-text button:hover {
+    }
+    .nav>span{
+        font-size: 30px;
+    }
+    .menu>img{
+        width: 20px;
+    }
+    #bi0{
+        height: 450px;
+    }
+    main>b{
+        font-size: 35px;
+    }
+    main>img{
+        top: 150px;
+        left: 30px;
+        width: 200px;
+        height: 200px;
+    }
+    main>p{
+        top: 70px;
+        left: 260px;
+        font-size: 20px;
+    }
+    footer{
+        height: 155px;
+    }
+    footer>u{
+        font-size: 15px;
+    }
+    footer>p:nth-child(2){
+        left: 40px;
+        top: 75px;
+        font-size: 15px;
+    }
+    footer>p:nth-child(3){
+        left: 40px;
+        font-size: 15px;
+    }
+    footer>h5:nth-child(4){
+        font-size: 15px;
+    }
+    footer>div img{
+        width: 30px;
+    }
 }
 @media all and (max-width: 425px) {
     nav>a>img {
@@ -308,3 +390,61 @@ footer>div{
         width: 20px;
     }
 }
+@media all and (max-width: 375px) {
+    #bi0{
+        height: 550px;
+    }
+    main>img{
+        top: 75px;
+        left: 75px;
+        width: 200px;
+        height: 200px;
+    }
+    main>p{
+        top: 270px;
+        left: 25px;
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 320px) {
+    .hero-text {
+        top: 60%;
+    }
+    .hero-text p{
+        font-size: 15px;
+    }
+    .name1{font-size:22px
+    }
+    #bi0{
+        height: 550px;
+    }
+    main>img{
+        left: 50px;
+    }
+    main>p{
+        left: 20px;
+        font-size: 14px;
+    }
+    footer>u{
+        font-size: 12px;
+    }
+    footer>p:nth-child(2){
+        font-size: 12px;
+    }
+    footer>p:nth-child(3){
+        font-size: 12px;
+    }
+    footer>h5:nth-child(4){
+        right: 30px;
+        top: 60px;
+        font-size: 10px;
+    }
+    footer>div{
+        right: 20px;
+        top: 80px;
+    }
+    footer>div img{
+        width: 17px;
+    }
+}
+
