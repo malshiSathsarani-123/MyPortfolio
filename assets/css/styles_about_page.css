@@ -1,7 +1,6 @@
 ::selection{
     background-color: #018A8A;
 }
-
 main{
     position: relative;
     top: 50px;
@@ -26,9 +25,7 @@ header>nav>a{
 .nav:hover{
     cursor: pointer;
 }
-
 .nav>span{
-    /*color: white;*/
     font-weight: bold;
     color:  #021426;
     position: absolute;
@@ -177,7 +174,6 @@ header>nav>a{
 }
 .div{
     height: 500px;
-    width: 1000px;
     top: 500px;
     position: relative;
 }
@@ -185,7 +181,6 @@ header>nav>a{
     background: #f5f5f5;
     position: absolute;
     top: 0;
-    height: 550px;
     width: calc(100vw - 17px);
 }
 .education>u{
@@ -253,6 +248,142 @@ footer>div{
     top: 110px;
 }
 
+@media all and (max-width: 1440px) {
+    main{
+        top: 100px;
+    }
+    header>nav>a{
+        right: 50px;
+        top: 50px;
+    }
+    .nav>span{
+        font-size: 35px;
+    }
+    .img{
+        left: 100px;
+        top: 400px;
+    }
+    .img img{
+        width: 300px;
+    }
+    .skills1{
+        left: 550px;
+    }
+    .div{
+        top: 550px;
+    }
+    footer{
+        height: 170px;
+    }
+    footer>p:nth-child(2){
+        left: 60px;
+    }
+    footer>p:nth-child(3){
+        left: 60px;
+    }
+    footer>h5:nth-child(4){
+        right: 90px;
+    }
+    footer>div{
+        right: 60px;
+    }
+}
+@media all and (max-width: 1024px) {
+    main>h1{
+        font-size: 35px;
+    }
+    header>nav>a{
+        right: 50px;
+        top: 20px;
+    }
+    .text{
+        position: absolute;
+        top: 180px;
+        font-size: 20px;
+    }
+    .cart{
+        width: 200px;
+    }
+
+    .label{
+        top: 140px;
+        font-size: 25px;
+    }
+    .img{
+        position: absolute;
+        left: 50px;
+        top: 350px;
+    }
+    .skills1{
+        top: 350px;
+        left: 400px;
+    }
+    .education>u{
+        left: 400px;
+    }
+    footer{
+        top: 600px;
+        height: 160px;
+    }
+
+    footer>p:nth-child(2){
+        left: 50px;
+    }
+    footer>p:nth-child(3){
+        left: 50px;
+    }
+    footer>h5:nth-child(4){
+        right: 100px;
+    }
+    footer>div{
+        right: 70px;
+    }
+}
+@media all and (max-width: 768px) {
+    header>nav>a{
+        right: 50px;
+        top: 20px;
+    }
+    .img{
+        left: 50px;
+        top: 700px;
+    }
+    .skills1{
+        top: 650px;
+        left: 350px;
+    }
+    .div{
+        top: 700px;
+    }
+    .education>u{
+        left:40%;
+    }
+    footer{
+        top: 750px;
+    }
+    footer>u{
+        font-size: 15px;
+    }
+    footer>p:nth-child(2){
+        left: 50px;
+        font-size: 20px;
+    }
+    footer>p:nth-child(3){
+        left: 50px;
+        top: 100px;
+    }
+    footer>h5:nth-child(4){
+        right: 50px;
+        font-size: 15px;
+    }
+    footer>div{
+        right: 30px;
+        top: 100px;
+    }
+    footer>div img{
+        width: 25px;
+    }
+}
 @media all and (max-width: 425px) {
     nav>a>img {
         position: relative;
@@ -260,11 +391,10 @@ footer>div{
         top: 10px;
     }
     .nav>span {
-        left: 30px;
+        left: 70px;
         font-size: 20px;
     }
     main{
-        /*position: relative;*/
         top: 40px;
     }
     main>h1{
@@ -279,7 +409,6 @@ footer>div{
         width: 120px;
         height: 100px;
     }
-
     .text{
         position: absolute;
         top: 160px;
@@ -290,14 +419,13 @@ footer>div{
         width: 200px;
         height: 300px;
     }
-
     .label{
         top: 120px;
         font-size: 25px;
     }
     .img{
         position: absolute;
-        left: 50px;
+        left: 100px;
         top: 1150px;
     }
     .skills1{
@@ -305,7 +433,6 @@ footer>div{
         top: 1400px;
         left: 50px;
     }
-
     .tag{
         width: 80px;
     }
@@ -340,5 +467,44 @@ footer>div{
     }
     footer>div img{
         width: 20px;
+    }
+}
+@media all and (max-width: 375px) {
+    .skills1{
+        left: 30px;
+    }
+    .img{
+        left: 50px;
+    }
+}
+@media all and (max-width: 320px) {
+    header>nav>a{
+        right: 20px;
+    }
+    header>nav>a{
+        top: 10px;
+    }
+    .nav>span{
+        left: 50px;
+        font-size: 20px;
+    }
+    footer{
+        top: 980px;
+        height: 110px;
+    }
+    footer>u{
+        font-size: 10px;
+    }
+    footer>p:nth-child(2){
+        font-size: 12px;
+    }
+    footer>p:nth-child(3){
+        font-size: 12px;
+    }
+    footer>h5:nth-child(4){
+        font-size: 10px;
+    }
+    footer>div img{
+        width: 17px;
     }
 }
