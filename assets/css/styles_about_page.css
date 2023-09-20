@@ -344,22 +344,30 @@ footer>div{
         right: 50px;
         top: 20px;
     }
+    .hexagon {
+        width: 120px;
+        height: 100px;
+    }
     .img{
         left: 50px;
         top: 700px;
     }
+    .cart{
+         width: 300px;
+     }
+
     .skills1{
         top: 650px;
         left: 350px;
     }
     .div{
-        top: 700px;
+        top: 800px;
     }
     .education>u{
         left:40%;
     }
     footer{
-        top: 750px;
+        top: 900px;
     }
     footer>u{
         font-size: 15px;
@@ -425,12 +433,12 @@ footer>div{
     }
     .img{
         position: absolute;
-        left: 100px;
+        left: 50px;
         top: 1150px;
     }
     .skills1{
         max-width: 80%;
-        top: 1400px;
+        top: 1450px;
         left: 50px;
     }
     .tag{
@@ -440,7 +448,7 @@ footer>div{
         display: none;
     }
     footer{
-        top: 1000px;
+        top: 1050px;
         height: 110px;
     }
     footer>u{
@@ -476,6 +484,10 @@ footer>div{
     .img{
         left: 50px;
     }
+    .skills1{
+        top: 1450px;
+        left: 40px;
+    }
 }
 @media all and (max-width: 320px) {
     header>nav>a{
@@ -488,8 +500,20 @@ footer>div{
         left: 50px;
         font-size: 20px;
     }
+    .img{
+        position: absolute;
+        left: 0px;
+        top: 1210px;
+    }
+    .skills{
+        top: 50px;
+    }
+    .skills1{
+        top: 1500px;
+        left: 20px;
+    }
     footer{
-        top: 980px;
+        top: 1100px;
         height: 110px;
     }
     footer>u{
