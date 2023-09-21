@@ -1,10 +1,10 @@
 ::selection{
     background-color: #018A8A;
 }
-header>nav>a{
+header>nav>a:first-child{
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 20px;
 }
 .nav{
     position: relative;
@@ -13,7 +13,8 @@ header>nav>a{
     font-weight: bold;
     color:  #021426;
     position: absolute;
-    left: 100px;
+    top: 20px;
+    left: 50px;
     font-size: 30px;
     margin: 0;
     width: fit-content;
@@ -42,7 +43,6 @@ main>section{
     position: absolute;
     top: 100px;
 }
-
 .gallery {
     display: flex;
     padding: 2px;
@@ -72,7 +72,7 @@ main>section{
 }
 
 footer{
-    top: 1400px;
+    top: 1600px;
     position: relative;
     height: 150px;
     background-color: #00a1a7;
@@ -109,6 +109,19 @@ footer>div{
     position: absolute;
     right: 120px;
     top: 110px;
+}
+@media all and (max-width: 1440px) {
+    main>section{
+        top: 50px;
+    }
+}
+@media all and (max-width: 1024px) {
+
+}
+@media all and (max-width: 768px) {
+    main{
+        top: 75px;
+    }
 }
 @media all and (max-width: 425px) {
     nav>a>img{
@@ -165,4 +178,27 @@ footer>div{
     footer>div img{
         width: 20px;
     }
+}
+@media all and (max-width: 375px) {
+    .nav>span {
+        position: absolute;
+        top: 10px;
+    }
+    header>nav>a:first-child{
+        position: absolute;
+        top: 10px;
+    }
+}
+@media all and (max-width: 320px) {
+    .nav>span {
+        left: 10px;
+    }
+    .gallery_link{
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    main>h1{
+        font-size: 15px;
+    }
+
 }
