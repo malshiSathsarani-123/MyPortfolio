@@ -1,9 +1,9 @@
 ::selection{
     background-color: #018A8A;
 }
-header>nav>a{
+header>nav>a:first-child{
     position: absolute;
-    right: 20px;
+    right: 50px;
     top: 20px;
 }
 .nav{
@@ -13,8 +13,8 @@ header>nav>a{
     font-weight: bold;
     color:  #021426;
     position: absolute;
-    left: 100px;
-    /*top: 50px;*/
+    left: 50px;
+    top: 30px;
     font-size: 30px;
     margin: 0;
     width: fit-content;
@@ -37,15 +37,16 @@ main>h1{
     width: fit-content;
 }
 
-* {
-    box-sizing:border-box;
-    margin:0;
-}
+/** {*/
+/*    box-sizing:border-box;*/
+/*    margin:0;*/
+/*}*/
 
 body {
     background: linear-gradient(90deg, #BE8CEF 0%, rgba(61, 46, 232, 0.83) 100%);
 }
 section{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,9 +64,9 @@ section{
     position: relative;
     overflow: hidden;
     width: 768px;
-    max-width: 100%;
-    min-height: 480px;
-    min-width:370px;
+    /*max-width: 100%;*/
+    /*min-height: 480px;*/
+    /*min-width:370px;*/
 }
 .left-container{
     position: relative;
@@ -158,6 +159,31 @@ button {
 button:hover {
     opacity:0.7;
 }
+@media all and (max-width: 1440px) {
+    header>nav>a:first-child{
+        top: 30px;
+    }
+    .nav>span{
+        top: 50px;
+    }
+    section{
+        position: relative;
+        top: 100px;
+    }
+}
+@media all and (max-width: 1024px) {
+    section{
+        top: 75px;
+    }
+}
+@media all and (max-width: 768px) {
+    section{
+        top: 100px;
+    }
+    .container {
+        width: 600px;
+    }
+}
 @media all and (max-width: 425px) {
     nav>a>img{
         position: relative;
@@ -165,16 +191,15 @@ button:hover {
     }
     .nav>span {
         left: 30px;
-        top: 20px;
+        top: 50px;
         font-size: 20px;
     }
     section{
-        position: relative;
-        top:50px
+        top:100px
     }
     .container {
         max-width: 80%;
-        min-height: 480px;
+        min-height: 500px;
     }
 
     h2 {
@@ -186,7 +211,7 @@ button:hover {
     }
 
     .left-container {
-        height:200px;
+        height:250px;
     }
     .left-container p {
         top: 10px;
@@ -196,13 +221,43 @@ button:hover {
         top: 40px;
     }
 
-
     .right-container {
-        height:350px;
+        height:400px;
     }
 
     input, textarea {
         margin: 6px 0;
         font-size:0.6rem;
     }
+}
+@media all and (max-width: 375px) {
+    section{
+        top:100px;
+    }
+    .left-container {
+        height:250px;
+    }
+    .right-inner-container {
+        width:70%;
+        height:100%;
+    }
+    .sm-view{
+        display: none;
+    }
+}
+
+@media all and (max-width: 320px) {
+    section {
+        top: 100px;
+    }
+    .container {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+        0 10px 10px rgba(0,0,0,0.22);
+        position: relative;
+        overflow: hidden;
+        width: 768px;
+    }
+
 }
