@@ -1,0 +1,42 @@
+footer{
+    top: 90vh;
+    position: relative;
+    height: 26vh;
+    background-color: #00a1a7;
+}
+footer>u{
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    font-size: 1.5vw;
+}
+footer>p:nth-child(2){
+    position: absolute;
+    left: 1vw;
+    top: 10vh;
+    font-size: 1.5vw;
+}
+footer>p:nth-child(3){
+    position: absolute;
+    left: 1vw;
+    top: 14vh;
+    font-size: 1.5vw;
+}
+footer>h5:nth-child(4){
+    position: absolute;
+    margin-top: 0;
+    right: 1.5vw;
+    top: 12vh;
+    font-size: 1.5vw;
+}
+footer>div{
+    position: absolute;
+    right: 1vw;
+    top:16vh;
+}
+footer>div>a>em>img{
+    width: 2.5vw;
+}
