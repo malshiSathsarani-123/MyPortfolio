@@ -1,13 +1,6 @@
 ::selection{
     background-color: #018A8A;
 }
-#navigation{
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 60px;
-    z-index:9999;
-}
 body, html {
     overflow-x: hidden;
     height: 100%;
@@ -89,6 +82,13 @@ main>section{
 .nav>span:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+#navigation{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    z-index:9999;
 }
 details {
     position: absolute;
@@ -204,6 +204,15 @@ main>p{
     .hero-text>p{
         font-size: 2vw;
     }
+    main>p{
+        left: 23vw;
+        font-size: 1.8vw;
+    }
+    main>img{
+        top: 18vh;
+        width: 17vw;
+        height: 17vw;
+    }
 }
 @media all and (max-width: 768px) {
     .nav>span{
@@ -214,6 +223,21 @@ main>p{
     }
     .hero-image {
         height: 75%;
+    }
+    main>p{
+        left: 25vw;
+        font-size: 2vw;
+    }
+    main>img{
+        width: 20vw;
+        height: 20vw;
+    }
+    #bi0{
+        width: calc(100vw - 2vw);
+        height: 50vh;
+    }
+    main>b{
+        font-size: 5vw;
     }
 }
 @media all and (max-width: 425px) {
@@ -235,6 +259,26 @@ main>p{
     .name1{
         font-size: 6vw;
     }
+    #bi0{
+        height: 80vh;
+    }
+    main>b{
+        font-size: 7vw;
+        top: 4vh;
+    }
+    main>img{
+        width: 35vw;
+        height: 35vw;
+        top: 15vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    main>p{
+        top: 43vh;
+        left: 3vw;
+        font-size: 3vw;
+    }
 }
 @media all and (max-width: 375px) {
     .nav{
@@ -243,10 +287,34 @@ main>p{
     details{
         top:4vw;
     }
+    main>b{
+        font-size: 8vw;
+        top: 4vh;
+    }
+    main>img{
+        width: 40vw;
+        height: 40vw;
+    }
+    main>p{
+        font-size: 3.5vw;
+    }
 }
 @media all and (max-width: 320px) {
     .nav{
         left:1vw;
+    }
+    #bi0{
+        width: calc(100vw - 3vw);
+        height: 80vh;
+    }
+    main>img{
+        top: 12vh;
+        width: 45vw;
+        height: 45vw;
+    }
+    main>p{
+        top: 40vh;
+        font-size: 3.8vw;
     }
 }
 
