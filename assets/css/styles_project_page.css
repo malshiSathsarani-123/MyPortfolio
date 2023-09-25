@@ -29,6 +29,7 @@
 .img-project{
     width: 22vw;
     height: 30vh;
+    border-radius: 10px;
 }
 .cart-project{
     position: relative;
@@ -37,6 +38,7 @@
     border: #018A8A 1px solid;
     margin-left: 2vw;
     margin-right: 2vw;
+    border-radius: 10px;
 }
 .project_img{
     z-index: 3;
