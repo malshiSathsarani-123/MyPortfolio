@@ -157,7 +157,8 @@ details[open] summary::after {
     }
 }
 #bi0{
-    background-color: #edfbfc;
+    /*background-color: #edfbfc;*/
+    background-color: #E6F3F4;
     position: relative;
     width: calc(100vw - 1.5vw);
     height: 60vh;
