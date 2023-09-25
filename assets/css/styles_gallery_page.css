@@ -48,7 +48,9 @@
     transform: scale(1.1);
 }
 @media all and (max-width: 1440px){
-
+    #gallery-section{
+        height: 230vh;
+    }
 }
 @media all and (max-width: 1024px){
     #gallery-section{
