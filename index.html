@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
-    <script src="assets/lib/fontawesome/js/all.min.js"></script>
+
 
     <link rel="stylesheet" href="assets/css/styles_home_page.css">
     <link rel="stylesheet" href="assets/css/styles_about_page.css">
@@ -21,9 +21,25 @@
     <link rel="stylesheet" href="assets/css/styles_gallery_page.css">
     <link rel="stylesheet" href="assets/css/styles_contact_page.css">
     <link rel="stylesheet" href="assets/css/styles_footer.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
 
 </head>
 <body>
+
+<div  id="preloader">
+    <div id="preloader-over-layer"></div>
+    <img src="assets/image/preloader.gif"
+         alt="preloader"
+         width="100">
+</div>
+
 <div class="hero-image" id="home-section">
     <nav id="navigation">
         <details>
@@ -33,7 +49,7 @@
                 <a href="#project-section">Project</a>
                 <a href="#assignment-section">Assignment</a>
                 <a href="#gallery-section">Gallery</a>
-                <a href="#cotact-section">Contact</a>
+                <a href="#contact-section">Contact</a>
             </nav>
         </details>
         <a class="nav" href=""><span class="name">Malshi</span></a>
@@ -41,14 +57,14 @@
     <div class="hero-text">
         <h1 class="name1">I am Malshi Sathsarani</h1>
         <p>And I'm a Backend Developer</p>
-        <a href="assets/pdf/CV_Malshi_Sathsarani_3767.pdf" download="true"><button>Download Cv</button></a>
+        <a href="assets/pdf/CV_Malshi_Sathsarani_3767.pdf" download="true" data-aos="flip-left"><button>Download Cv</button></a>
     </div>
 </div>
 <main id="bi0">
-    <b><u><span>BO</span></u></b>
+    <b><u><span>BIO</span></u></b>
     <img src="assets/image/about_img.jpg"
          alt="about">
-    <p>
+    <p class="animate__animated animate__bounce">
         I am Malshi Satsarani Jayakodi. I am currently pursuing a software engineering degree from IJSE (Institute Of Java Software Engineer). Born on 27th April 2001, Ragama is my hometown.
 
         I have a natural inclination towards competition as I believe it motivates me to strive for excellence and reach my full potential.
@@ -105,7 +121,7 @@
                     Strong preference for easy to use, intuitive Backend.
                 </div>
             </div>
-        </div>
+a        </div>
 
         <div class="cart">
             <div class="rectangle">
@@ -186,26 +202,26 @@
 </main>
 <div class="div">
     <section id="language">
-        <h5 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">Languages</h5>
-        <h1 data-aos="zoom-out" data-aos-delay="0" data-aos-duration="800">What I Learnt</h1>
+        <h5>Languages</h5>
+        <h1>What I Learnt</h1>
 
-        <img data-aos="zoom-out" data-aos-delay="200" data-aos-duration="800" id="javaLogo" src="assets/image/language/Section6-Java.png">
+        <img id="javaLogo" src="assets/image/language/Section6-Java.png">
 
-        <img data-aos="zoom-out" data-aos-delay="400" data-aos-duration="800" id="sqlLogo" src="assets/image/language/Section6-MySql.png">
+        <img id="sqlLogo" src="assets/image/language/Section6-MySql.png">
 
-        <img data-aos="zoom-out" data-aos-delay="400" data-aos-duration="800" id="jsLogo" src="assets/image/language/Section6-JS.png">
+        <img id="jsLogo" src="assets/image/language/Section6-JS.png">
 
-        <img data-aos="zoom-out" data-aos-delay="600" data-aos-duration="800" id="cssLogo" src="assets/image/language/Section6-Css.png">
+        <img id="cssLogo" src="assets/image/language/Section6-Css.png">
 
-        <img data-aos="zoom-out" data-aos-delay="600" data-aos-duration="800" id="htmlLogo" src="assets/image/language/Section6-Html.png">
+        <img id="htmlLogo" src="assets/image/language/Section6-Html.png">
 
-        <img data-aos="zoom-out" data-aos-delay="800" data-aos-duration="800" id="figmaLogo" src="assets/image/language/Section6-Figma.png">
+        <img id="figmaLogo" src="assets/image/language/Section6-Figma.png">
 
-        <img data-aos="zoom-out" data-aos-delay="800" data-aos-duration="800" id="xdLogo" src="assets/image/language/Section6-XD.png">
+        <img id="xdLogo" src="assets/image/language/Section6-XD.png">
 
-        <img data-aos="zoom-out" data-aos-delay="1000" data-aos-duration="800" id="arduinoLogo" src="assets/image/language/Section6-Arduino.png">
+        <img id="arduinoLogo" src="assets/image/language/Section6-Arduino.png">
 
-        <img data-aos="zoom-out" data-aos-delay="1000" data-aos-duration="800" id="hibernateLogo" src="assets/image/language/Section6-Hibernate.png">
+        <img id="hibernateLogo" src="assets/image/language/Section6-Hibernate.png">
     </section>
 </div>
 
@@ -459,5 +475,24 @@
         <a href="https://www.linkedin.com/in/malshi-sathsarani-178295266/"><em><img src="assets/image/icons8-linkedin-logo-192.png" alt="linkedin" width="40"></em></a>
     </div>
 </footer>
+
+<script src="assets/lib/jquery.js"></script>
+<script src="assets/lib/fontawesome/js/all.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+    window.onload=()=>{
+        $("#preloader").css('display','none')
+    }
+
+    document.addEventListener("DOMContentLoaded",()=>{
+        console.log("B")
+    })
+
+    $(window).ready(()=>{
+
+    })
+</script>
 </body>
 </html>
