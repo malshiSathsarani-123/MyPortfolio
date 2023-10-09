@@ -8,7 +8,7 @@ body, html {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/profile3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/profile.jpg");
     height: 100%;
     width: calc(100vw - 1.5vw);
     background-position: center;
@@ -29,9 +29,8 @@ body, html {
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
-    animation: typing 4s steps(15)
-    , cursor .4s step-end infinite alternate ;
-    font-size:4vw
+    /*animation: slide 5s infinite;*/
+    font-size: 4vw;
 }
 
 .hero-text button {
@@ -58,7 +57,7 @@ main>section{
     }
 }
 @keyframes typing {
-    from{
+    0% {
         width: 0;
     }
 }

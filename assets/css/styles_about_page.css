@@ -6,13 +6,16 @@
     top: 5vh;
 }
 .about-main>h1{
-    font-family: 'Catamaran';
+    font-family: "Lucida Handwriting", cursive;
     font-size: 3vw;
     top: 5vh;
     right: 0;
     left: 0;
     margin: auto;
     width: fit-content;
+}
+.about-main>h1>u{
+    opacity: 20;
 }
 .skills{
     position: relative;
@@ -61,6 +64,7 @@
     position: absolute;
 }
 .label{
+    font-family: Inter, SansSerif;
     position: absolute;
     left: 0;
     right: 0;
@@ -143,8 +147,9 @@
     width: 0;
     height: 100%;
     background-color: #00a1a7;
-    animation: load 4s forwards linear ;
+    animation: load 4s forwards ;
 }
+
 .skills1>div:first-child>div{
     --p:70;
 }
@@ -193,8 +198,8 @@
     margin: auto;
 }
 #language>h1{
-    width: 19vw;
-    font-family: 'Catamaran';
+    width: 24vw;
+    font-family: "Brush", cursive;
     font-size: 3vw;
     font-weight: 700;
     color: #0A0A0A;

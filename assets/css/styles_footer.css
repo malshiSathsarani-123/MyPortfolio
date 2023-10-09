@@ -2,9 +2,11 @@ footer{
     top: 65vh;
     position: relative;
     height: 26vh;
-    background-color: #00a1a7;
+    /*background-color: #00a1a7;*/
+    background-color: #212121;
 }
 footer>u{
+    color: white;
     width: fit-content;
     position: absolute;
     left: 0;
@@ -14,6 +16,7 @@ footer>u{
     font-size: 1.5vw;
 }
 footer>p:nth-child(2){
+    color: white;
     position: absolute;
     left: 1vw;
     top: 10vh;
@@ -21,11 +24,13 @@ footer>p:nth-child(2){
 }
 footer>p:nth-child(3){
     position: absolute;
+    color: white;
     left: 1vw;
     top: 14vh;
     font-size: 1.5vw;
 }
 footer>h5:nth-child(4){
+    color: white;
     position: absolute;
     margin-top: 0;
     right: 1.5vw;
