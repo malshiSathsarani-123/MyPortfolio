@@ -9,7 +9,7 @@
     top: 50vh;
 }
 #project-section>main>h1{
-    font-family: 'Catamaran';
+    font-family: "Brush", cursive;
     position: absolute;
     top: 2vh;
     right: 0;
@@ -29,7 +29,7 @@
     justify-content: space-around;
 }
 
-.cart-project:hover .card-front {
+.cart-project:hover .img-project {
     transform: rotateX(-180deg);
 }
 .cart-project:hover .card-back {
@@ -47,9 +47,7 @@
     transition: 0.5s;
     color: #ffffff;
     text-align: center;
-}
-.card-back h2 {
-    font-size: 26px;
+    border-radius: 10px;
 }
 
 .img-project{
@@ -58,8 +56,8 @@
     height: 30vh;
     border-radius: 10px;
     backface-visibility: hidden;
-        transform: rotateX(0deg);
-        transition: 0.5s;
+    transform: rotateX(0deg);
+    transition: 0.5s;
 }
 
 .cart-project{
@@ -70,16 +68,9 @@
     margin-left: 2vw;
     margin-right: 2vw;
     border-radius: 10px;
-    /*transform: translate(-50%, -50%);*/
     transform-style: preserve-3d;
     perspective: 600px;
     transition: 0.5s;
-}
-.project_img{
-    z-index: 3;
-    width: 22vw;
-    height: 20vh;
-    position: relative;
 }
 .text-project{
     position: absolute;
@@ -96,6 +87,7 @@
     position: absolute;
     left: 0;
     right: 0;
+    bottom: 2vh;
     margin: auto;
     width: fit-content;
 }
@@ -133,126 +125,137 @@ button:active {
 
 
 
-/*@media all and (max-width: 1440px) {*/
-/*    .cart-project{*/
-/*        margin-bottom: 0;*/
-/*    }*/
-/*}*/
-/*@media all and (max-width: 1024px) {*/
-/*    #project-section{*/
-/*        position: relative;*/
-/*        top: 80vh;*/
-/*    }*/
-/*    #project-section>main>h1{*/
-/*        font-size: 3.5vw;*/
-/*    }*/
-/*    .img-project{*/
-/*        width: 22vw;*/
-/*        height: 27vh;*/
-/*    }*/
-/*    .cart-project{*/
-/*        height: 27vh;*/
-/*    }*/
-/*    .project_img{*/
-/*        height: 17vh;*/
-/*    }*/
-/*}*/
-/*@media all and (max-width: 768px) {*/
-/*    #project-section{*/
-/*        top: 58vh;*/
-/*    }*/
-/*    .img-project{*/
-/*        width: 27vw;*/
-/*    }*/
-/*    .cart-project{*/
-/*        width: 27vw;*/
-/*        margin-left: 0;*/
-/*        margin-right: 0;*/
-/*    }*/
-/*    .project{*/
-/*        margin-left: 5vw;*/
-/*        top: 13vh;*/
-/*    }*/
-/*    .text-project{*/
-/*        font-size: 2vw;*/
-/*    }*/
-/*}*/
-/*@media all and (max-width: 425px) {*/
-/*    #project-section{*/
-/*        top: 100vh;*/
-/*        margin-left: 0;*/
-/*    }*/
-/*    #project-section>main>h1{*/
-/*        font-size: 5vw;*/
-/*    }*/
-/*    .project{*/
-/*        width: 100vw;*/
-/*        margin: 0;*/
-/*        top: 10vh;*/
-/*    }*/
-/*    .img-project{*/
-/*        width: 40vw;*/
-/*        height: 35vw;*/
-/*    }*/
-/*    .cart-project{*/
-/*        width: 40vw;*/
-/*        height: 35vw;*/
-/*        margin-bottom: 5vw;*/
-/*    }*/
-/*    .project_img{*/
-/*        width: 40vw;*/
-/*        height: 20vw;*/
-/*    }*/
-/*    .text-project{*/
-/*        top: 5vh;*/
-/*        font-size: 3.5vw;*/
-/*    }*/
-/*    .button button{*/
-/*        width: 20vw;*/
-/*        height: 6vh;*/
-/*        font-size: 3vw;*/
-/*    }*/
-/*}*/
-/*@media all and (max-width: 375px) {*/
-/*    #project-section {*/
-/*        top: 110vh;*/
-/*    }*/
+@media all and (max-width: 1440px) {
+    .cart-project{
+        margin-bottom: 0;
+    }
+}
+@media all and (max-width: 1024px) {
+    #project-section{
+        position: relative;
+        top: 80vh;
+    }
+    #project-section>main>h1{
+        font-size: 3.5vw;
+    }
+    .img-project{
+        width: 22vw;
+        height: 27vh;
+    }
+    .cart-project{
+        height: 27vh;
+    }
+    .button{
+        bottom: 5vh;
+    }
+}
+@media all and (max-width: 768px) {
+    #project-section{
+        top: 58vh;
+    }
+    .img-project{
+        width: 27vw;
+    }
+    .cart-project{
+        width: 27vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card-back {
+        width: 27vw;
+        margin-left: 0;
+        margin-right: 0;
+        height: 27vh;
+    }
+    .project{
+        margin-left: 5vw;
+        top: 13vh;
+    }
+    .text-project{
+        font-size: 2vw;
+    }
+}
+@media all and (max-width: 425px) {
+    #project-section{
+        top: 100vh;
+        margin-left: 0;
+    }
+    #project-section>main>h1{
+        font-size: 5vw;
+    }
+    .project{
+        width: 100vw;
+        margin: 0;
+        top: 10vh;
+    }
+    .img-project{
+        width: 40vw;
+        height: 35vw;
+    }
+    .cart-project{
+        width: 40vw;
+        height: 35vw;
+        margin-bottom: 5vw;
+    }
+    .card-back {
+        width: 40vw;
+        height: 35vw;
+        margin-bottom: 5vw;
+    }
+    .text-project{
+        top: 5vh;
+        font-size: 3.5vw;
+    }
+    .button button{
+        width: 20vw;
+        height: 6vh;
+        font-size: 3vw;
+    }
+    .button{
+        bottom: 3vh;
+    }
+}
+@media all and (max-width: 375px) {
+    #project-section {
+        top: 110vh;
+    }
 
-/*    #project-section > main > h1 {*/
-/*        font-size: 7vw;*/
-/*    }*/
-/*}*/
-/*@media all and (max-width: 320px) {*/
-/*    #project-section {*/
-/*        top: 100vh;*/
-/*        height: 140vh;*/
-/*    }*/
-/*    .project{*/
-/*        !*width: 100vw;*!*/
-/*    }*/
-/*    .img-project{*/
-/*        width: 60vw;*/
-/*        height: 35vw;*/
-/*    }*/
-/*    .cart-project{*/
-/*        width: 60vw;*/
-/*        height: 35vw;*/
-/*        margin-bottom: 5vw;*/
-/*    }*/
-/*    .project_img{*/
-/*        width: 60vw;*/
-/*        height: 20vw;*/
-/*    }*/
-/*    .text-project{*/
-/*        top: 5vh;*/
-/*        font-size: 3.5vw;*/
-/*    }*/
-/*    .button button{*/
-/*        width: 20vw;*/
-/*        height: 6vh;*/
-/*        font-size: 3vw;*/
-/*    }*/
-/*}*/
+    #project-section > main > h1 {
+        font-size: 7vw;
+    }
+}
+@media all and (max-width: 320px) {
+    #project-section {
+        top: 100vh;
+        height: 140vh;
+    }
+    .img-project{
+        width: 60vw;
+        height: 35vw;
+    }
+    .cart-project{
+        width: 60vw;
+        height: 35vw;
+        margin-bottom: 5vw;
+    }
+    .card-back {
+        width: 60vw;
+        height: 35vw;
+        margin-bottom: 5vw;
+    }
+    .text-project{
+        top: 5vh;
+        font-size: 3.5vw;
+    }
+    .button button{
+        width: 20vw;
+        height: 6vh;
+        font-size: 3vw;
+    }
+    .button{
+        bottom: 1vh;
+    }
+}
 
 
 
