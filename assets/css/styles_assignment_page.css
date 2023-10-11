@@ -155,6 +155,7 @@
         top: 45vh;
     }
 }
+
 @media all and (max-width: 768px) {
     #assignment-section {
         top: 65vh;
@@ -209,17 +210,76 @@
         border-radius: 5px;
     }
 }
+@media all and (max-width: 550px) {
+    #assignment-section{
+        top: 80vh;
+        height: 100vh;
+    }
+    #assignment-section>div{
+        width: 20vw;
+    }
+    #box1{
+        left: 5vw;
+    }
+    #box2{
+        left: 28vw;
+    }
+    #box3{
+        left: 51vw;
+    }
+    #box4{
+        left: 74vw;
+    }
+    #box5{
+        left: 5vw;
+        top: 45vh;
+    }
+    #box6{
+        left: 28vw;
+        top: 45vh;
+    }
+    #box7{
+        left: 51vw;
+    }
+    #box8{
+        left: 74vw;
+    }
+    #box9{
+        left: 5vw;
+        top: 70vh;
+    }
+    #box10{
+        left: 28vw;
+        top: 70vh;
+    }
+    #box11{
+        left: 51vw;
+        top: 70vh;
+    }
+    #box12{
+        left: 74vw;
+        top: 70vh;
+    }
+    #assignment-section>div>h4{
+        width: 15vw;
+        font-size: 2.2vw;
+    }
+    #assignment-section>div>h6{
+        width: 4vw;
+        font-size: 2vw;
+    }
+}
 @media all and (max-width: 425px) {
     #assignment-section {
         top: 130vh;
-        height: 95vh;
+        height: 120vh;
     }
     #assignment-section>h1 {
         width: 27vw;
         font-size: 7vw;
     }
     #assignment-section>div{
-        width: 20vw;
+        width: 25vw;
     }
     #assignment-section>div>h4{
         width: 16vw;
@@ -231,47 +291,47 @@
     }
     #box2{
         top: 20vh;
-        left: 29vw;
+        left: 34vw;
     }
     #box3{
         top: 20vh;
-        left: 53vw;
+        left: 63vw;
     }
     #box4{
-        top: 20vh;
-        left: 77vw;
+        top: 45vh;
+        left: 5vw;
     }
     #box5{
         top: 45vh;
-        left: 5vw;
+        left: 34vw;
     }
     #box6{
         top: 45vh;
-        left: 29vw;
+        left: 63vw;
     }
     #box7{
-        top: 45vh;
-        left: 53vw;
-    }
-    #box8{
-        top: 45vh;
-        left: 77vw;
-    }
-    #box9{
         top: 70vh;
         left: 5vw;
     }
-    #box10{
+    #box8{
         top: 70vh;
-        left: 29vw;
+        left: 34vw;
+    }
+    #box9{
+        top: 70vh;
+        left: 63vw;
+    }
+    #box10{
+        top: 95vh;
+        left: 5vw;
     }
     #box11{
-        top: 70vh;
-        left: 53vw;
+        top: 95vh;
+        left: 34vw;
     }
     #box12{
-        top: 70vh;
-        left: 77vw;
+        top: 95vh;
+        left: 63vw;
     }
     #assignment-section>div>h6{
         width: 5vw;

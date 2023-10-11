@@ -142,6 +142,7 @@ summary:hover {
     transform: scale(1.1);
 }
 details[open] .menu {
+    background-color: white;
     animation-name: menuAnim;
 }
 details[open] summary::before {
@@ -315,6 +316,14 @@ main>p{
         font-size: 5vw;
     }
 }
+
+@media all and (max-width: 550px) {
+    #bi0{
+        height: 40vh;
+    }
+}
+
+
 @media all and (max-width: 425px) {
     .nav>span{
         font-size: 6vw;

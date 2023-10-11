@@ -175,6 +175,23 @@ button:active {
         font-size: 2vw;
     }
 }
+@media all and (max-width: 550px) {
+    #project-section{
+        top: 45vh;
+    }
+    .cart-project{
+        margin-bottom: 5vw;
+    }
+    .text-project{
+        top: 5vh;
+        font-size: 3vw;
+    }
+    .button button{
+        width: 20vw;
+        height: 6vh;
+        font-size: 3vw;
+    }
+}
 @media all and (max-width: 425px) {
     #project-section{
         top: 100vh;

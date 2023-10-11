@@ -147,7 +147,7 @@
     width: 0;
     height: 100%;
     background-color: #00a1a7;
-    animation: load 4s forwards ;
+    animation: load 10s forwards infinite;
 }
 
 .skills1>div:first-child>div{
@@ -372,6 +372,19 @@
     }
     #language>img{
         top: 20vh;
+    }
+}
+@media all and (max-width: 550px) {
+    .img{
+        left: 8vw;
+        top: 50vh;
+    }
+    .skills1{
+        top: 45vh;
+    }
+    .div{
+        height: 35vh;
+        top: 40vh;
     }
 }
 @media all and (max-width: 425px) {
