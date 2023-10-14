@@ -68,8 +68,10 @@
 }
 .arrow{
     position: absolute;
-    right: 1vw;
-    bottom: 1vw;
+    right: 0;
+    left: 0;
+    bottom: -0.5vh;
+    margin: auto;
 }
 @media all and (max-width: 1440px) {
     #contact-section{
