@@ -179,6 +179,9 @@ button:active {
     #project-section{
         top: 45vh;
     }
+    #project-section>main>h1{
+        font-size: 5vw;
+    }
     .cart-project{
         margin-bottom: 5vw;
     }
@@ -234,9 +237,15 @@ button:active {
 }
 @media all and (max-width: 375px) {
     #project-section {
-        top: 110vh;
+        top: 115vh;
     }
-
+    .button{
+        bottom: 2vh;
+    }
+    .cart-project {
+        margin-left: 1vw;
+        margin-right: 4vw;
+    }
     #project-section > main > h1 {
         font-size: 7vw;
     }

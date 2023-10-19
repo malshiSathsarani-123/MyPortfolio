@@ -76,7 +76,7 @@ footer>div>a>em>img{
 }
 @media all and (max-width: 425px) {
     footer{
-        top: 120vh;
+        top: 105vh;
         height: 21vh;
     }
     footer>u{
@@ -111,6 +111,6 @@ footer>div>a>em>img{
     }
 }@media all and (max-width: 320px) {
     footer {
-        top: 105vh;
+        top: 90vh;
     }
 }

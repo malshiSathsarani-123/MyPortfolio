@@ -94,7 +94,7 @@
 }
 @media all and (max-width: 425px) {
     #contact-section{
-        top: 120vh;
+        top: 105vh;
         height: 90vh;
     }
 }
@@ -110,6 +110,6 @@
 }
 @media all and (max-width: 320px) {
     #contact-section{
-        top: 105vh;
+        top: 90vh;
     }
 }

@@ -9,10 +9,10 @@ body, html {
 }
 .dark_mood{
     position: absolute;
-    top: 4vh;
+    top: 10vh;
     left: 13vw;
-    width: 200px;
-    height: 70px;
+    width: 14vw;
+    height: 6vw;
     background: transparent;
     /*border: 2px solid white;*/
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -21,38 +21,46 @@ body, html {
 
 .mood{
     position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 2vh;
+    width: 4vw;
+    height: 4vw;
+    top: 1vw;
     left: 2vw;
 }
+.mood:hover{
+    cursor: pointer;
+}
 .dark{
-    /*left: 8vw;*/
     animation: transwer 2s none;
 
 }
 .light{
     display: none;
     left: 9vw;
-
+    animation: lightR 2s none;
 }
 
-@keyframes transwer {
-    1%{
+@keyframes lightR {
+    from{
         top: 2vh;
-        left: 10vw;
+        left: 2vw;
+        opacity: 1%;
     }
-    20%{
+    to{
+        left: 9vw;
+        opacity: 100%;
+    }
+}
+@keyframes transwer {
+    from{
         top: 2vh;
         left: 10vw;
-
+        opacity: 1%;
     }
     to{
         top: 2vh;
         left: 2vw;
+        opacity: 100%;
     }
-
-
 }
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/profile3.jpg");

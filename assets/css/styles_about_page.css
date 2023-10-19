@@ -90,7 +90,9 @@
     }
 }
 .img>img{
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     width: 20vw;
+    height: 18vw;
 }
 .skills1{
     margin: 4vh auto 0 auto;
@@ -286,10 +288,11 @@
     }
     .img{
         left: 8vw;
-        top: 55vh;
+        top: 70vh;
     }
     .img>img{
         width: 25vw;
+        height: 25vw;
     }
     .skills1{
         top: 55vh;
@@ -316,8 +319,8 @@
         width: 8vw;
     }
     #language>h1{
-        width: 25vw;
-        font-size: 4vw;
+        width: 30vw;
+        font-size: 3.5vw;
     }
 }
 @media all and (max-width: 768px) {
@@ -345,10 +348,11 @@
     }
     .img{
         left: 6vw;
-        top: 60vh;
+        top: 65vh;
     }
     .img>img{
         width: 30vw;
+        height: 30vw;
     }
     .bar>span{
         font-size: 2vw;
@@ -376,8 +380,8 @@
 }
 @media all and (max-width: 550px) {
     .img{
-        left: 8vw;
-        top: 50vh;
+        left: 6vw;
+        top: 60vh;
     }
     .skills1{
         top: 45vh;
@@ -385,6 +389,10 @@
     .div{
         height: 35vh;
         top: 40vh;
+    }
+    .img>img{
+        width: 30vw;
+        height: 30vw;
     }
 }
 @media all and (max-width: 425px) {
@@ -424,6 +432,7 @@
     }
     .img>img{
         width: 40vw;
+        height: 40vw;
     }
     .skills1{
         max-width: 90%;
@@ -452,6 +461,7 @@
         right: 20%;
     }
     #language>h1{
+        width: 40vw;
         top: 8vh;
         font-size: 5vw;
     }
@@ -476,9 +486,11 @@
     }
     .img{
         top: 85vh;
+        left: 23vw;
     }
     .img>img{
         width: 50vw;
+        height: 50vw;
     }
     .bar{
         height: 6vw;
@@ -493,6 +505,9 @@
     .div{
         top: 120vh;
     }
+    #language>h1 {
+        width: 40vw;
+    }
 }
 @media all and (max-width: 320px) {
     .text{
@@ -506,9 +521,11 @@
     }
     .img{
         top: 75vh;
+        left: 20vw;
     }
     .img>img{
         width: 55vw;
+        height: 55vw;
     }
     .skills1{
         top: 110vh;

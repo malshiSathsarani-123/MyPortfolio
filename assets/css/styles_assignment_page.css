@@ -218,6 +218,10 @@
     #assignment-section>div{
         width: 20vw;
     }
+    #assignment-section>h1 {
+        width: 27vw;
+        font-size: 5vw;
+    }
     #box1{
         left: 5vw;
     }
@@ -271,7 +275,7 @@
 }
 @media all and (max-width: 425px) {
     #assignment-section {
-        top: 130vh;
+        top: 115vh;
         height: 120vh;
     }
     #assignment-section>h1 {
@@ -344,6 +348,7 @@
     }
     #assignment-section>h1 {
         font-size: 8vw;
+        width: 40vw;
     }
     #assignment-section>div>h4{
         width: 19vw;
@@ -352,6 +357,6 @@
 }
 @media all and (max-width: 320px) {
     #assignment-section {
-        top: 115vh;
+        top: 100vh;
     }
 }
