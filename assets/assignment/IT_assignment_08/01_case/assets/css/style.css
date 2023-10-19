@@ -1,0 +1,11 @@
+#running_boy{
+    width: 50px;
+    position: relative;
+    display: inline;
+
+}
+#house{
+    position: absolute;
+    top: 3px;
+    right: 0;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS</title>
+    <meta name="keywords" content="HTML,CSS,Java Script, Pos System,malshi">
+    <meta name="description" content="Pos System details and my Pos System website.">
+    <meta name="revised" content="Login page, 01/08/2023">
+    <meta name="author" content="Malshi Sathsarani">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/stylesForLoginForm.css">
+    <link rel="stylesheet" href="assets/styles/stylesForDashboard.css">
+    <link rel="stylesheet" href="assets/styles/stylesForCustomer.css">
+    <link rel="stylesheet" href="assets/styles/stylesForItem.css">
+    <link rel="stylesheet" href="assets/styles/stylesForOrder.css">
+    <link rel="stylesheet" href="../assets/lib/fontawesome/css/all.min.css">
+    <script src="../assets/lib/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+    <section id="login_section">
+        <div>
+        </div>
+        <div class="main">
+        <h1>Welcome!</h1>
+        <h3>To Pos System</h3>
+        <a ><img src="assets/image/fb.png" alt="fb"></a>
+        <a class="whatsapp" href=""><img src="assets/image/whatsapp.png" alt="fb"></a>
+        <div>
+            <h1>Sign In</h1>
+            <form>
+                <form>
+                    <div class="mb-3">
+                        <input class="form-control-input" id="id" type="text" required>
+                        <label for="id" class="form-label">Id</label>
+                    </div>
+                    <div class="mb-3">
+                        <input id="user_name" class="form-control-input" type="text" required>
+                        <label class="form-label" for="user_name">Name</label>
+                    </div>
+                </form>
+                <h3>Create Account</h3>
+                <a><button id="sign_in" type="button" class="btn btn-primary">Sign In</button></a>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <div class="dashboard-nav" id="dashboard_section">
+        <header>
+            <a class="brand-logo"><span>POS SYSTEM</span></a>
+        </header>
+        <nav class="dashboard-nav-list">
+            <a  class="dashboard-nav-item"><i class="fas fa-home"></i>Home </a>
+            <a  class="dashboard-nav-item" id="customer_nav"><i class="fas fa-user"></i> Customer </a>
+            <a class="dashboard-nav-item" id="item_nav"><i class="fas fa-cogs"></i> Item </a>
+            <a  class="dashboard-nav-item" id="order_nav"><i class="fas fa-cogs"></i> Order </a>
+            <div class="nav-item-divider"></div>
+            <a  class="dashboard-nav-item" id="login_nav"><i class="fas fa-sign-out-alt"></i> Logout </a>
+        </nav>
+    </div>
+
+    <section id="customer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="title">Customers Details</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="data_customer">
+                    <form>
+                        <div class="mb-3">
+                            <input class="form-control-input" id="customer_id" type="text" required>
+                            <label for="customer_id" class="form-label">Customer_Id</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="name_customer" class="form-control-input" type="text" required>
+                            <label class="form-label" for="name">Name</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="address_customer" class="form-control-input" type="text" required>
+                            <label class="form-label" for="address">Address</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="email_customer" class="form-control-input" type="email" required>
+                            <label class="form-label" for="email">E-mail</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="phone_customer" class="form-control-input" type="text" required>
+                            <label class="form-label" for="phone">Contact Number</label>
+                        </div>
+                        <div class="mt-4 mb-5">
+                            <button id="submit_customer" type="button" class="btn btn-success">Save</button>
+                            <button id="update_customer" type="button" class="btn btn-primary">Update</button>
+                            <button id="delete_customer" type="button" class="btn btn-danger">Delete</button>
+                            <button id="reset_customer" type="reset" class="btn btn-warning">Clear</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col col-xl-6 col-lg-6  col-md-6 col-sm-12 col-12" id="tabel_customer">
+                    <table class="table mt-5" border="5px">
+                        <thead>
+                        <tr>
+                            <th scope="col">Customer_Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Contact</th>
+                        </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="item_section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="title">Item Details</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="data_item">
+                    <form>
+                        <div class="mb-3">
+                            <input class="form-control-input" id="item_code" type="text" required>
+                            <label for="item_code" class="form-label">Code</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="description_item" class="form-control-input" type="text" required>
+                            <label class="form-label" for="description">Description</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="price_item" class="form-control-input" type="number" required>
+                            <label class="form-label" for="price">Price</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="item_qty" class="form-control-input" type="number" required>
+                            <label class="form-label" for="item_qty">Qty</label>
+                        </div>
+                        <div class="mt-4 mb-5">
+                            <button id="submit" type="button" class="btn btn-success">Save</button>
+                            <button id="update" type="button" class="btn btn-primary">Update</button>
+                            <button id="delete" type="button" class="btn btn-danger">Delete</button>
+                            <button id="reset" type="reset" class="btn btn-warning">Clear</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col col-xl-6 col-lg-6  col-md-6 col-sm-12 col-12" id="tabel_item">
+                    <table class="table mt-5" border="5px">
+                        <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Unit Price</th>
+                            <th scope="col">Qty</th>
+                        </tr>
+                        </thead>
+                        <tbody id="item_table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order_section">
+        <div class="container">
+            <div class="col">
+                <h1 class="title">Place Order</h1>
+            </div>
+            <div class="row">
+                <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" id="data">
+                    <u class="topic"><h3 >Invoice Data</h3></u>
+                    <form>
+                        <div class="mb-3">
+                            <input id="orderId" class="form-control-input" type="text" required>
+                            <label for="orderId" class="form-label">Order Id</label>
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control-input" id="date" type="date" required>
+                            <label for="date" class="form-label">Order Date</label>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-control-input" id="selectCusID"></select>
+                            <label for="selectCusID" class="form-label">Customer Id</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="name" class="form-control-input" type="text" required>
+                            <label class="form-label" for="name">Name</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="address" class="form-control-input" type="text" required>
+                            <label class="form-label" for="address">Address</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="email" class="form-control-input" type="email" required>
+                            <label class="form-label" for="email">E-mail</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="phone" class="form-control-input" type="text" required>
+                            <label class="form-label" for="phone">Contact Number</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" id="data1">
+                    <u class="topic"><h3 >Item Details</h3></u>
+                    <form>
+                        <div class="mb-3">
+                            <input class="form-control-input" id="itemCode" type="text" required>
+                            <label for="itemCode" class="form-label">Item Code</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="description" class="form-control-input" type="text" required>
+                            <label class="form-label" for="description">Description</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="price" class="form-control-input" type="number" required>
+                            <label class="form-label" for="price">Price</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="qty" class="form-control-input" type="number" required>
+                            <label class="form-label" for="qty">Qty</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="orderQty" class="form-control-input" type="number" required>
+                            <label class="form-label" for="orderQty">Order Qty</label>
+                        </div>
+                        <div class="mt-4 mb-5">
+                            <button type="button" class="btn btn-primary">Add Item</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" id="data2">
+                    <form>
+                        <div class="mb-3">
+                            <span class="total" id="total-text">Total : </span>
+                            <span id="total">00.0</span> <span class="unit">Rs/=</span>
+                        </div>
+                        <div class="mb-3">
+                            <input id="cash" class="form-control-input" type="number" required>
+                            <label class="form-label" for="cash">Cash</label>
+                        </div>
+                        <div class="mb-3">
+                            <input id="balance" class="form-control-input" type="number" required>
+                            <label class="form-label" for="balance">Balance</label>
+                        </div>
+                        <div class="mt-4 mb-5">
+                            <button type="submit" class="btn btn-success">Place Order</button>
+                        </div>
+                    </form>
+                </div>
+                <!--        <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">-->
+                <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="height:180px; overflow-y: scroll">
+                    <table class="table table-bordered text-white">
+                        <thead class="bg-primary">
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody class="bg-light text-dark" id="orderTable">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/lib/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--Manage Navigations-->
+    <script>
+        $('#dashboard_section').css('display', 'none');
+        $('#customer_section').css('display', 'none');
+        $('#order_section').css('display', 'none');
+        $('#item_section').css('display', 'none');
+
+        $('#sign_in').on('click', () => {
+            $('#dashboard_section').css('display', 'block');
+            $('#login_section').css('display', 'none');
+            $('#customer_section').css('display', 'none');
+            $('#item_section').css('display', 'none');
+            $('#order_section').css('display', 'none');
+        });
+
+        $('#customer_nav').on('click', () => {
+            $('#customer_section').css('display', 'block');
+            $('#login_section').css('display', 'none');
+            $('#item_section').css('display', 'none');
+            $('#order_section').css('display', 'none');
+        });
+
+        $('#item_nav').on('click', () => {
+            $('#item_section').css('display', 'block');
+            $('#login_section').css('display', 'none');
+            $('#customer_section').css('display', 'none');
+            $('#order_section').css('display', 'none');
+        });
+
+        $('#order_nav').on('click', () => {
+            $('#item_section').css('display', 'none');
+            $('#login_section').css('display', 'none');
+            $('#customer_section').css('display', 'none');
+            $('#order_section').css('display', 'block');
+        });
+    </script>
+</body>
+</html>

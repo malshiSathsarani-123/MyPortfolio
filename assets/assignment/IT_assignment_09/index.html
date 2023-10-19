@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            position: relative;
+            background-color: black;
+        }
+        div{
+            z-index: 9999;
+            width: 100px;
+            height: 50px;
+            border: 3px solid black;
+            margin-top: 200px;
+            margin-left: 0;
+            left: 300px;
+            position: relative;
+            display: inline-block;
+            box-shadow: rgb(145, 128, 227) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        button{
+            font-size: 30px;
+            left: 570px;
+            top: 20px;
+            border-radius: 10px;
+            position: relative;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<main id="kit">
+    <section id="light_panel">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </section>
+    <section id="btn-panel">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </section>
+</main>
+
+<audio src="assets/audio/audio.mp3/audio.mp3" id="audio"></audio>
+
+<script src="../assets/lib/jquery.min.js"></script>
+
+<script>
+    var current_light=-1;
+    var current_direction="RIGHT";
+    var light_count=6;
+    var  interval_id=null;
+
+    const updateLightPanel = () => {
+        $(".light").css("background","white")
+        if (current_direction==="RIGHT"){
+            current_light++;
+            $(".light").eq(current_light).css("background","red")
+
+            if (current_light -1>0){
+                $(".light").eq(current_light-1).css("background","#ef5350")
+                $(".light").eq(current_light-2).css("background","#ef9a9a")
+            }
+
+            if (current_light===light_count-1){
+                current_direction="LEFT"
+            }
+        }else {
+            current_light--;
+            $(".light").eq(current_light).css("background","red")
+            $(".light").eq(current_light+1).css("background","#ef5350")
+            $(".light").eq(current_light+2).css("background","#ef9a9a")
+            if (current_light===0){
+                current_direction="RIGHT"
+            }
+        }
+    }
+
+    $("#start").on("click",()=>{
+        if (interval_id === null){
+        interval_id = setInterval(updateLightPanel,100);
+        $("#audio")[0].play();
+        }
+    });
+    $("#stop").on("click",()=>{
+        $(".light").css("background","white")
+        clearInterval(interval_id)
+        interval_id = null;
+        $("#audio")[0].pause();
+    });
+
+</script>
+</body>
+</html>

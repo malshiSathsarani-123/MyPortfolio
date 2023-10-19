@@ -1,0 +1,117 @@
+section{
+    position: relative;
+}
+
+#div1{
+    width: 600px;
+    height: 150px;
+
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    margin: auto;
+}
+
+#div2{
+    width: 600px;
+    height: 150px;
+    border-top: 2px solid black;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    margin: auto;
+}
+
+#div3{
+    width: 600px;
+    height: 150px;
+    border-top: 2px solid black;
+    position: absolute;
+    top: 450px;
+    left: 400px;
+    margin: auto;
+}
+
+
+#div1>div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#div2>div{
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#div3>div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: #e6dbb9;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#box4{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/*var upBox = $("#upBox");//document.getElementById("upBox");*/
+/*var downBox = $("#downBox"); //document.getElementById("downBox");*/
+/*var box1 = $("#box4");//document.getElementById("box4");*/
+/*var box2 = $("#box3");//document.getElementById("box3");*/
+/*var box3 = $("#box2");//document.getElementById("box2");*/
+/*var box4 = $("#box1");//document.getElementById("box1");*/
+
+/*let box = [upBox, box1, box2, box3, box4, downBox];*/
+/*let colors = ["red", "yellow", "green", "blue", "deeppink", "orange"];*/

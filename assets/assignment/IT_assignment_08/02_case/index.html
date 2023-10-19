@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Que</title>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <section>
+        <div id="div1">
+            <div id="upBox" class="upBox"></div>
+        </div>
+        <div id="div2">
+            <div>
+                <div id="box1"></div>
+                <div id="box2"></div>
+                <div id="box3"></div>
+                <div id="box4"></div>
+            </div>
+        </div>
+        <div id="div3">
+            <div id="downBox"></div>
+        </div>
+    </section>
+    <script>
+
+        let box = [document.getElementById("upBox"), document.getElementById("box1"), document.getElementById("box2"), document.getElementById("box3"), document.getElementById("box4"), document.getElementById("downBox")];
+        let colors = ["red", "yellow", "green", "blue", "deeppink", "orange"];
+
+        const myFunction = () =>{
+            for(let i = 0; i < 6; i++){
+                box[i].style.backgroundColor = colors[i];
+                box[i].style.border = "solid 2px black";
+            }
+            colors.unshift(colors[5]);
+            colors.pop();
+        };
+        setInterval(myFunction,1000)
+    </script>
+
+</body>
+
+</html>

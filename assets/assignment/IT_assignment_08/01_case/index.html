@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 08</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<main>
+    <section id="running_boy">
+        <label class="l">A</label>
+        <img src="assets/img/running-5558_256.gif" alt="img">
+        <label class="l" >B</label>
+        <img src="assets/img/running-5558_256.gif" alt="img">
+        <label class="l">C</label>
+        <img src="assets/img/running-5558_256.gif" alt="img">
+        <label  class="l">D</label>
+        <img src="assets/img/running-5558_256.gif" alt="img">
+        <label  class="l">E</label>
+        <img src="assets/img/running-5558_256.gif" alt="img">
+        <label  class="l">F</label>
+        <img src="assets/img/running-5558_256.gif" alt="img">
+    </section>
+    <section id="house">
+        <img src="assets/img/winter-1613_256.gif" alt="house">
+    </section>
+   
+</main>
+
+<script src="../../assets/lib/jquery.min.js"></script>
+
+<script>
+    let letters = [$(".l").eq(0).text(),$(".l").eq(1).text(),$(".l").eq(2).text(),$(".l").eq(3).text(),$(".l").eq(4).text(),$(".l").eq(5).text()];
+    setInterval(function(){
+        for(let i = 0; i < 6; i++){
+            $(".l").eq(i).html(letters[i]);
+        }
+        letters.unshift(letters[5]);
+        letters.pop();
+
+    }, 1000);
+</script>
+
+</body>
+</html>
