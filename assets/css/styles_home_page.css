@@ -9,10 +9,10 @@ body, html {
 }
 .dark_mood{
     position: absolute;
-    top: 10vh;
-    left: 13vw;
-    width: 14vw;
-    height: 6vw;
+    top: 2vh;
+    right: 8vw;
+    width: 10vw;
+    height: 4vw;
     background: transparent;
     /*border: 2px solid white;*/
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -21,21 +21,21 @@ body, html {
 
 .mood{
     position: absolute;
-    width: 4vw;
-    height: 4vw;
-    top: 1vw;
-    left: 2vw;
+    width: 3vw;
+    height: 3vw;
+    top: 1vh;
+    left: 1vw;
+    z-index: 9999;
 }
 .mood:hover{
     cursor: pointer;
 }
 .dark{
     animation: transwer 2s none;
-
 }
 .light{
     display: none;
-    left: 9vw;
+    left: 6vw;
     animation: lightR 2s none;
 }
 
@@ -46,19 +46,19 @@ body, html {
         opacity: 1%;
     }
     to{
-        left: 9vw;
+        left: 6vw;
         opacity: 100%;
     }
 }
 @keyframes transwer {
     from{
-        top: 2vh;
-        left: 10vw;
+        top: 1vh;
+        left: 5vw;
         opacity: 1%;
     }
     to{
-        top: 2vh;
-        left: 2vw;
+        top: 1vh;
+        left: 1vw;
         opacity: 100%;
     }
 }
@@ -345,6 +345,14 @@ main>p{
     }
 }
 @media all and (max-width: 768px) {
+    .dark_mood{
+        width: 11vw;
+        height: 6vw;
+    }
+    .mood{
+        width: 4vw;
+        height: 4vw;
+    }
     .nav>span{
         font-size: 4vw;
     }
@@ -375,10 +383,27 @@ main>p{
     #bi0{
         height: 40vh;
     }
+    .dark_mood{
+        width: 13vw;
+        height: 7vw;
+    }
+    .mood{
+        width: 5vw;
+        height: 5vw;
+    }
 }
 
 
 @media all and (max-width: 425px) {
+    .dark_mood{
+        width: 13vw;
+        height: 7vw;
+        right: 13vw;
+    }
+    .mood{
+        width: 5vw;
+        height: 5vw;
+    }
     .nav>span{
         font-size: 6vw;
     }
@@ -419,6 +444,20 @@ main>p{
     }
 }
 @media all and (max-width: 375px) {
+    .light{
+        display: none;
+        right: 0;
+    }
+    .dark_mood{
+        top: 4vh;
+        width: 15vw;
+        height: 8vw;
+        right: 13vw;
+    }
+    .mood{
+        width: 5vw;
+        height: 5vw;
+    }
     .nav{
         top:5vw;
     }

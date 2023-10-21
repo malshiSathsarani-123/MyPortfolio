@@ -3,6 +3,8 @@
 }
 #contact-section{
     background-color: black;
+    background-image: url("../../assets/image/contact-image-background.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     top: 90vh;
