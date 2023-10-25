@@ -83,11 +83,36 @@ body, html {
 .name1{
     font-family:Brush Script MT, Brush Script Std, cursive;
     white-space: nowrap;
-    width: 100%;
+    width: 120%;
     overflow: hidden;
     animation: typing 4s steps(15) infinite;
     , cursor .4s step-end infinite alternate ;
     font-size:4vw
+}
+.hero-text>p{
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    animation: updown 5s infinite;
+}
+@keyframes updown {
+    from{
+        /*top:20vh;*/
+        left: 30vw;
+        opacity: 0;
+    }
+    50%{
+        opacity: 30%;
+        color: red;
+    }
+    70%{
+        opacity: 40%;
+        color: blue;
+    }
+    to{
+        left: 0;
+        opacity: 100%;
+    }
 }
 
 .hero-text button {
@@ -251,15 +276,20 @@ details[open] summary::after {
     height: 60vh;
 }
 main>span{
-    font-family: "Lucida Handwriting", cursive;
-    font-size: 3vw;
+    /*font-family: "Lucida Handwriting", cursive;*/
+    font-size: 2vw;
     height: fit-content;
     width: fit-content;
     position: absolute;
+    font-weight: bold;
     top: 6vh;
     left: 0;
     right: 0;
     margin: auto;
+}
+main>span>span{
+    color: #0a58ca;
+    font-size: 4vw;
 }
 main>img{
     width: 15vw;
@@ -267,8 +297,8 @@ main>img{
     position: absolute;
     top: 15vh;
     left: 4vw;
-    border-radius: 100%;
-    animation: bounce 1s infinite;
+    /*border-radius: 100%;*/
+    animation: bounce 1s linear;
 }
 main>p{
     position: absolute;
@@ -345,6 +375,10 @@ main>p{
     }
 }
 @media all and (max-width: 768px) {
+    main>span>span{
+        color: #0a58ca;
+        font-size: 8vw;
+    }
     .dark_mood{
         width: 11vw;
         height: 6vw;
@@ -355,6 +389,12 @@ main>p{
     }
     .nav>span{
         font-size: 4vw;
+    }
+    .name1{
+        font-size: 5vw;
+    }
+    .hero-text>p{
+        font-size: 3vw;
     }
     summary::after {
         font-size: 4vw;
@@ -375,11 +415,17 @@ main>p{
         height: 50vh;
     }
     main>span{
-        font-size: 5vw;
+        font-size: 4vw;
     }
 }
 
 @media all and (max-width: 550px) {
+    .name1{
+        font-size: 6vw;
+    }
+    .hero-text>p{
+        font-size: 4vw;
+    }
     #bi0{
         height: 40vh;
     }
@@ -395,6 +441,10 @@ main>p{
 
 
 @media all and (max-width: 425px) {
+    main>span>span{
+        color: #0a58ca;
+        font-size: 10vw;
+    }
     .dark_mood{
         width: 13vw;
         height: 7vw;
@@ -426,7 +476,7 @@ main>p{
         height: 80vh;
     }
     main>span{
-        font-size: 7vw;
+        font-size: 4vw;
         top: 4vh;
     }
     main>img{
@@ -444,6 +494,10 @@ main>p{
     }
 }
 @media all and (max-width: 375px) {
+    main>span>span{
+        color: #0a58ca;
+        font-size: 12vw;
+    }
     .light{
         display: none;
         right: 0;
@@ -465,7 +519,7 @@ main>p{
         top:4vw;
     }
     main>span{
-        font-size: 8vw;
+        font-size: 5vw;
         top: 4vh;
     }
     main>img{

@@ -45,8 +45,9 @@
     border-radius: 20px;
     border: black 1px solid;
 }
-.gallery__image:hover {
+.gallery__image:hover.gallery__image{
     transform: scale(1.1);
+    filter: grayscale(0);
 }
 @media all and (max-width: 1440px){
     #gallery-section{
