@@ -7,6 +7,12 @@ body, html {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+p:hover{
+    color: #0a58ca;
+}
+div:hover{
+    color: #0a58ca;
+}
 .dark_mood{
     position: absolute;
     top: 2vh;
